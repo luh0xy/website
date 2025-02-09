@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>album | website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dc34219075.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('nightwater.gif'); /* Use relative path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        
+        .cursor-effect {
+            position: relative;
+            z-index: 1;
+        
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-media a {
+            color: white; /* Default color */
+            position: relative;
+        }
+
+        .social-media a.telegram {
+            color: #0088cc; /* Telegram color */
+        }
+
+        .social-media a.discord {
+            color: #7289da; /* Discord color */
+        }
+
+        .social-media a.youtube {
+            color: #ff0000; /* YouTube color */
+        }
+
+        .social-media a.twitter {
+            color: #1da1f2; /* Twitter color */
+        }
+
+        .social-media a:hover {
+            opacity: 0.7; /* Change opacity on hover */
+        }
+
+        .social-media a span {
+            
+            width: 40px;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%; /* Position the tooltip directly under the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .social-media a:hover span {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <p class="profile-text">oxy</p>
+            <h1>my socials</h1>
+        </div>
+        <div class="social-media">
+            <a href="https://t.me/luh0xy" class="telegram">
+                <i class="fa-brands fa-telegram" style="font-size: 24px;"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://discord.com/users/177922564436262912" class="discord">
+                <i class="fa-brands fa-discord" style="font-size: 24px;"></i>
+                <span>Discord</span>
+            </a>
+            <a href="https://www.youtube.com/@highoffoxy" class="youtube">
+                <i class="fa-brands fa-youtube" style="font-size: 24px;"></i>
+                <span>YT</span>
+            </a>
+            <a href="https://x.com/luh0xy" class="twitter">
+                <i class="fa-brands fa-x-twitter large-icon" style="font-size: 24px;"></i>
+                <span>X</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="gif-effect"></div>
+
+    <!-- Background Music -->
+    <audio id="background-music" src="interstellar.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
